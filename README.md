@@ -5,31 +5,32 @@ Booking is a web application that simulates a booking website for hotels
     - Admin can control hotels in system 
     - Admin can cancel reservations
     - admin can register new admins 
-    - Admin can view clients' reviews
+    - Admin can view clients' reviews and comments
 - Client Side
-    - client can register using `Email` and `username`
-    - client can search for hotels rooms
-    - client can make a reservation to a room
-    - client can search with check in and check out
-    - client can search with location
-    - client can edit his profile
-    - client can review a hotel
-    - client can cancel his reservation
+    - Client can register using `Email` and `username`
+    - Client can search for hotels rooms
+    - Client can make a reservation to a room
+    - Client can search with check in and check out
+    - Client can search with location
+    - Client can edit his profile
+    - Client can review a hotel
+    - Client can cancel his reservation
 
 ### Main functionalities
-#### client Functionalities
+#### Client Functionalities
 - User registration 
   - User must provide `Email` and `username`. 
   - User must check reCaptcha to avoid spam.
   - using Ajax to validate Email and username.
   - If `Email` and `Username` provided passes verification, an Email is sent to the Email provided with random generated password to Login with.
+  - Notify client via his mail using SMTP
   - Admins only can register new Admins.
 - login
   - User provide Email and password.
-  - using Ajax to validate `Email` and `Password` provided passes verification.
+  - Using Ajax to validate `Email` and `Password` provided passes verification.
   - if User is authenticated, application redirect them to their `Home` page.
-- search for hotels
-- book a hotel room
+- Search for hotels
+- Book a hotel room
 - Add Hotel review
 - Edit his profile
 ### Admin Functionalities
@@ -37,6 +38,7 @@ Booking is a web application that simulates a booking website for hotels
 - Add new Hotels to website
 - Check clients' reviews for hotels
 - Update Hotels' data
+- Notify admin via his mail using SMTP
 
 ### Built With
 1. Java servlets
